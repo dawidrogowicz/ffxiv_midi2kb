@@ -4,6 +4,7 @@
 
 ### Python libraries
 - pynput
+- python-rtmidi
 - mido
 
 ## Initial Setup

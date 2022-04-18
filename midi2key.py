@@ -32,6 +32,7 @@ def select_port():
         currentPort.close()
     print("Select input device:")
     inputports = mido.get_input_names()
+    
     for portNumber, portName in enumerate(inputports):
         print(str(portNumber + 1) + ": " + portName)
     while True:
@@ -51,7 +52,7 @@ def simulate_key(type, note, velocity):
     index = note - startingNote
     key = 0
     try:
-        key = letterNoteMap[index]  # C1 is note $startingNote, C6 is note $startingNote+60
+        key = letterNoteMap[index]
     except:
         pass
     if type == 'note_on':
